@@ -57,16 +57,24 @@ var rule = {
 
         if (list.length > 0) {
             let item = list.find(function(x) {
-                return /\.(m3u8|mp4)/.test(x.url);
+                return /\.(m3u8|mp4)/i.test(x.url);
             }) || list[0];
             link = item.url;
         }
 
-        if (/\.(m3u8|mp4)/.test(link)) {
-            input = { jx: 0, parse: 0, url: link };
-        } else {
-            input = { jx: 0, parse: 1, url: link };
-        }
+		if(link && /\.(m3u8|mp4)/i.test(link)){
+			input={
+				jx:0,
+				parse:0,
+				url:link
+			};
+		}else{
+			input={
+				jx:0,
+				parse:1,
+				url:link||''
+			};
+		}
     `,
 
     '一级': `js:
@@ -191,7 +199,7 @@ var rule = {
             }
         }));
 
-        let list = (json.data && json.data.result && json.data.result.list) || (json.data && json.data.list) || [];
+        let list = (json.data && json.data.list) || (json.data && json.data.result && json.data.result.list) || [];
         let d = [];
 
         list.forEach(function(it) {
