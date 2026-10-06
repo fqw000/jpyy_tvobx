@@ -1,14 +1,28 @@
 {
+  "spider": "https://github.com/FongMi/CatVodSpider/raw/main/jar/custom_spider.jar",
+  "wallpaper": "https://www.loliapi.com/acg/",
   "sites": [
     {
-      "key": "jpyy",
-      "name": "金牌影院",
+      "key": "JPYY",
+      "name": "金牌影视",
       "type": 3,
-      "api": "./drpy/js/jpyy.js",
-      "ext": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
+      "api": "csp_JsLoader",
+      "ext": "https://raw.githubusercontent.com/fqw000/jpyy_tvobx/refs/heads/main/manifest.json",
+      "searchable": 2,
+      "quickSearch": 0,
+      "filterable": 0
+    }
+  ],
+  "doh": [
+    {
+      "name": "阿里",
+      "url": "https://dns.alidns.com/dns-query",
+      "ips": ["223.5.5.5", "223.6.6.6"]
+    },
+    {
+      "name": "腾讯",
+      "url": "https://doh.pub/dns-query",
+      "ips": ["119.29.29.29", "1.12.12.12"]
     }
   ]
 }
