@@ -1,27 +1,14 @@
 {
-  "comment": "这是一个示例配置文件，展示如何将金牌影院集成到 TVBox 中",
   "sites": [
     {
       "key": "jpyy",
       "name": "金牌影院",
       "type": 3,
-      "api": "https://raw.githubusercontent.com/fqw000/jpyy_tvobx/main/drpy/lib/drpy2.min.js",
-      "ext": "https://raw.githubusercontent.com/fqw000/jpyy_tvobx/main/drpy/js/jpyy.js",
+      "api": "./drpy/lib/drpy2.min.js",
+      "ext": "./drpy/js/jpyy.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
     }
-  ],
-  "vipParse": [
-    {
-      "name": "解析1",
-      "url": "https://player.77yun.cn/player/?url="
-    },
-    {
-      "name": "解析2",
-      "url": "https://jx.m3u8.tv/?url="
-    }
-  ],
-  "wallpaper": "https://picsum.photos/1920/1080/?random",
-  "spider": "https://raw.githubusercontent.com/fqw000/jpyy_tvobx/main/drpy/lib/drpy2.min.js"
+  ]
 }
