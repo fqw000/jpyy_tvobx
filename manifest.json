@@ -4,8 +4,8 @@
       "key": "jpyy",
       "name": "金牌影院",
       "type": 3,
-      "api": "./dr_py/libs/drpy2.min.js",
-      "ext": "./dr_py/js/jpyy.js",
+      "api": "./drpy/libs/drpy2.min.js",
+      "ext": "./drpy/js/jpyy.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
