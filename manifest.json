@@ -1,13 +1,14 @@
 {
-  "spider": "https://cdn.jsdelivr.net/gh/FongMi/CatVodSpider@main/jar/custom_spider.jar",
+  "spider": "https://ghproxy.net/https://raw.githubusercontent.com/13998394872/TVBox/main/jar/xyq.jar",
+    // "spider": "https://ghp.xptvhelper.link/https://raw.githubusercontent.com/13998394872/TVBox/main/jar/xyq.jar",
   "wallpaper": "https://www.loliapi.com/acg/",
   "sites": [
     {
       "key": "JPYY",
       "name": "金牌影视",
       "type": 3,
-      "api": "csp_JsLoader",
-      "ext": "https://cdn.jsdelivr.net/gh/fqw000/jpyy_tvobx@main/json/jpyy.json",
+      "api": "./drpy/libs/drpy2.min.js",
+      "ext": "./drpy/js/jpyy.js",
       "searchable": 2,
       "quickSearch": 0,
       "filterable": 0
@@ -23,16 +24,61 @@
       "changeable": 1
     },
     {
-      "name": "独播库",
+      "key": "骚火电影",
+      "name": "骚火电影",
       "type": 3,
-      "api": "csp_duboku",
-      "ext": "https://raw.githubusercontent.com/fangkuia/XPTV/refs/heads/main/js/duboku.js"
+      "api": "csp_XYQBiu",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/cracada/gao/master/XYQBiu/骚火电影VIP.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      "name": "金牌影院",
+      "key": "低端影视",
+      "name": "低端影视",
       "type": 3,
-      "api": "csp_jpyy",
-      "ext": "https://raw.githubusercontent.com/Yswag/xptv-extensions/main/js/jpyy.js"
+      "api": "csp_XPathFilter",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/低端影视.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "看影网",
+      "name": "看影网",
+      "type": 3,
+      "api": "csp_XPathFilter",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/看影网.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "动漫巴士",
+      "name": "动漫巴士",
+      "type": 3,
+      "api": "csp_XPathFilter",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/动漫巴士.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    }
+  ],
+  "rules": [
+    {
+      "name": "暴风",
+      "hosts": ["bfzy", "s5.bfzycdn"],
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY", "#EXTINF.*?\\s+.*?adjump.*?\\.ts"]
+    },
+    {
+      "name": "量子",
+      "hosts": ["vip.lz", "hd.lz"],
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY"]
+    },
+    {
+      "name": "非凡",
+      "hosts": ["vip.ffzy", "hd.ffzy"],
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:4.000000,[\\s\\S]*?#EXT-X-DISCONTINUITY"]
     }
   ],
   "doh": [
