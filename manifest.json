@@ -47,7 +47,7 @@
   "rules": [
     {
       "name": "暴风",
-      "hosts": ["bfzy", "s5.bfzycdn", "s10.bfzycdn",v.fengbao14.com],
+      "hosts": ["bfzy", "s5.bfzycdn", "s10.bfzycdn", “v.fengbao14.com”],
       "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY", "#EXTINF.*?\\s+.*?adjump.*?\\.ts"]
     },
     {
