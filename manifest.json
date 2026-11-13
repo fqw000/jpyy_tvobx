@@ -38,17 +38,7 @@
       "name": "低端影视",
       "type": 3,
       "api": "csp_XPathFilter",
-      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/低端影视.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "看影网",
-      "name": "看影网",
-      "type": 3,
-      "api": "csp_XPathFilter",
-      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/看影网.json",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/refs/heads/main/XYQHiker/低端影视.json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -58,7 +48,7 @@
       "name": "动漫巴士",
       "type": 3,
       "api": "csp_XPathFilter",
-      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/动漫巴士.json",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/refs/heads/main/XYQHiker/动漫巴士.json",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -67,7 +57,7 @@
   "rules": [
     {
       "name": "暴风",
-      "hosts": ["bfzy", "s5.bfzycdn"],
+      "hosts": ["bfzy", "s5.bfzycdn", "s10.bfzycdn",v.fengbao14.com,],
       "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY", "#EXTINF.*?\\s+.*?adjump.*?\\.ts"]
     },
     {
